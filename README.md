@@ -17,6 +17,7 @@ allprojects {
 
 ```
 dependencies {
+   ...
    implementation 'com.github.satya-p91:TestingLibrary-Android:0.3'
 }
 ```
