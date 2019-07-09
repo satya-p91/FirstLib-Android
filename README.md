@@ -1,7 +1,7 @@
 # TestingLibrary-Android
 Learing how to create library in android and publish it to jitpack.
 
-To add this library add following
+I created a simple library to show toast and snackbar. To use this library in your android projedct add following -
 
 ## In project level gradle file
 ```
