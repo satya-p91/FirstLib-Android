@@ -4,19 +4,22 @@ Learing how to create library in android and publish it to jitpack.
 To add this library add following
 
 ## In project level gradle file
-
+```
 allprojects {
    repositories{
        ...
        maven { url 'https://jitpack.io'}
    }
 }
+```
   
 ## In app level gradle file
 
-  dependencies {
-      implementation 'com.github.satya-p91:TestingLibrary-Android:0.3'
-  }
+```
+dependencies {
+   implementation 'com.github.satya-p91:TestingLibrary-Android:0.3'
+}
+```
 
 
 
