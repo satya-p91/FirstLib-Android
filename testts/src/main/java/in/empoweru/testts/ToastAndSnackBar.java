@@ -5,6 +5,7 @@ import android.support.design.widget.Snackbar;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 public class ToastAndSnackBar {
@@ -29,7 +30,7 @@ public class ToastAndSnackBar {
         snackbar.show();
     }
 
-    public static void showSnackBarForRelativeLayout(LinearLayout layout,String message){
+    public static void showSnackBarForRelativeLayout(RelativeLayout layout, String message){
         final Snackbar snackbar = Snackbar.make(layout, message,Snackbar.LENGTH_INDEFINITE);
         snackbar.setAction("Cancel", new View.OnClickListener() {
             @Override
