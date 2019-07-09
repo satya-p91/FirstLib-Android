@@ -18,7 +18,18 @@ public class ToastAndSnackBar {
     }
 
 
-    public static void showSnackBar(LinearLayout layout,String message){
+    public static void showSnackBarForLinearLayout(LinearLayout layout,String message){
+        final Snackbar snackbar = Snackbar.make(layout, message,Snackbar.LENGTH_INDEFINITE);
+        snackbar.setAction("Cancel", new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                snackbar.dismiss();
+            }
+        });
+        snackbar.show();
+    }
+
+    public static void showSnackBarForRelativeLayout(LinearLayout layout,String message){
         final Snackbar snackbar = Snackbar.make(layout, message,Snackbar.LENGTH_INDEFINITE);
         snackbar.setAction("Cancel", new View.OnClickListener() {
             @Override
